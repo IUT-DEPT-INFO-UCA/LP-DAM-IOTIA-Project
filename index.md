@@ -16,6 +16,36 @@ You can use the [editor on GitHub](https://github.com/IUT-DEPT-INFO-UCA/LP-DAM-I
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ## Vision globale du projet
+Votre objectif est de modéliser un système permettant de construire des questionnaires dans un contexte médical.  Certaines questions sont classiques avec par exemple l’attente d’une réponse textuelle. Pour d’autres questions, les réponses pourront correspondre à mémoriser des relevés de composants électroniques : le nombre de pas enregistré toutes les 2 heures, le max de tension prise dans la journée, …  Voici la spécification qui vous est donnée.
+
+Vous devez développer une application composée de plusieurs parties dont une partie permet aux soignants de créer des questionnaires adaptés aux patients et d’analyser leur réponse ; une autre partie permet au patient de définir son profil et de répondre à un questionnaire ; une partie centrale enregistre toutes les informations. Nous disposons d’une base de connaissance externe dans laquelle un grand nombre de types de supports mobiles ont été enregistrés (DeviceKB). Elle comprend des modèles de montres connectés, des tensiomètres, des appareils de détection de la glycémie connecté.
+
+## Description détaillée
+Un patient s’enregistre dans l’application centrale en précisant son nom et sa pathologie. Il peut pour cela être aidé par un membre de l’équipe médical si besoin. Il peut modifier son profil, et éventuellement enregistrer un nouveau dispositif mobile associé à son profil ; il doit alors faire référence à un type de support préenregistré dans DeviceKB. Il peut également préciser le personnel médical autorisé à accéder à son profil.
+
+Un coach médical peut créer un questionnaire médical pour un patient donné. En fonction de la pathologie du patient et des dispositifs associés à son profil, un questionnaire adapté est automatiquement généré. Le coach peut alors adapter la durée du questionnaire : à partir de quand le questionnaire doit être actif et pour quelle durée. Il élimine, ajoute ou modifie des questions. A partir du moment où il a validé un questionnaire celui-ci est automatiquement déployé sur le téléphone du patient.
+
+Dès que le questionnaire est actif, l’application du patient, en fonction du questionnaire, se charge de faire les relevés automatiquement, de lancer des rappels au patient pour répondre à des questions textuelles ou lui demander de faire des relevés comme par exemple prendre son taux de glycémie. A la fin de la durée du questionnaire, celui-ci devient inactif. Le coach peut réactiver le questionnaire.
+
+A FINIR
+
+## Attentes sur le projet
+
+### Fonctionnalités
+Vous devez au minimum : 
+  - côté coach sportif : 
+     * permettre de créer un questionnaire adapté à un patient avec une question textuelle au moins et deux profils différents possibles
+   - côté patient : 
+     * permettre de répondre aux questions du questionnaire et renregistrement automatique dans le server
+   - partie centrale : 
+     * a minima enregistrement des réponses.
+     
+ ### Exigences non fonctionnelles
+patient : 
+  - proposer une application à destination du patient sur laquelle le patient peut répondre à des questions.
+
+
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
