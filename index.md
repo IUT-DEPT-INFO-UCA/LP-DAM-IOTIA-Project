@@ -1,21 +1,21 @@
-## Projet 2020-21 : Des questionnaires pour le suivi des patients.
+# Projet 2020-21 : Des questionnaires pour le suivi des patients.
 
 
-### Contexte du projet
+## Contexte du projet
 
-#### Accompagner la transformation numérique
+### Accompagner la transformation numérique
 The digital transformation of healthcare among others is driven by the aging/growing population challenge, the rise of chronic diseases, increasing costs and the changed expectations and behavior of people whereby digital health plays an increasingly important role.
 Overall smart healthcare market value by 2020 is estimated to be $169.32 billion by 2020. A major part of it will be for remote patient monitoring.
 [Digital transformation: online guide to digital business transformation](https://www.i-scoop.eu/digital-transformation/)
 
-#### Le projet CHAMPLAIN
+### Le projet CHAMPLAIN
 
 
 You can use the [editor on GitHub](https://github.com/IUT-DEPT-INFO-UCA/LP-DAM-IOTIA-Project/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Vision globale du projet
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
