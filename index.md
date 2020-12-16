@@ -87,6 +87,37 @@ Quelle que soit la variante du logiciel on attend que vous preniez en compte le 
     
     
 
+# II.4 Grandes étapes du projet
+
+1. Sprint 0 : Analyse du projet : *du 16/12/19 au 20/1/20*
+    - [ TD Modélisation UML](TD/modelisation.md)
+    - [ TD Exigences]](TD/exigences.md)
+2. Sprint 1 : Livraison d'une version V0 d'un produit minimal viable  du *---*
+
+
+### II.5 Livraisons
+Les rendus du projet sont décrits dans le [MOODLE](https://lms.univ-cotedazur.fr/mod/assign/index.php?id=19082)
+Chaque équipe devra
+2.  [ ]  Remplir le document partagé suivant en précisant les membres de l'équipe, la variante du sujet choisi et le nom de l'équipe.
+1.  [ ]  Proposer un premier document d'analyse de l'application en utilisant les diagrammes UML (voir [ TD Modélisation UML](TD/modelisation.md))
+
+
+
+
+## III. Règles GIT
+
+### III.1 Créer des templates
+   * Un template pour les Histoires Utilisateurs
+   * Un template pour les tâches Liées à la prise en compte du handicap
+  
+
+# Autres Références
+
+* https://www.w3.org/2019/12/pressrelease-intro-web-accessibility-course.html.fr
+* https://camo.githubusercontent.com/c59ffa40ba8d00a552f74fb05742f6b950bf4a64/68747470733a2f2f692e696d6775722e636f6d2f463170373568422e706e67
+* https://dev.to/madalynrose/5-things-you-need-to-know-about-manual-accessibility-testing-with-the-keyboard-and-screen-readers-3512
+
+
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
