@@ -15,6 +15,19 @@ You can use the [editor on GitHub](https://github.com/IUT-DEPT-INFO-UCA/LP-DAM-I
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+### L'équipe enseignante
+- Mireille Blay-Fornarino, professeur en GL, 
+- Jean-Michel Bruel, professeur en GL sur Toulouse qui prendra le maximum la main sur les enseignements de GL en LP DAM et IOTIA/
+
+- Pierrick est chef de projet chez Air France. Il leur partagera son expérience et son vécu. Faîtes appel à lui si vous pensez que les étudiants ont besoin de coaching par exemple.
+
+- Nicolas Ferry a initié cette version du projet... Il a fait cours aux DAM au 1e semestre et leur a donné des bases d’architectures, d’IC et de gestions de tâches sous Github.
+
+### Pourquoi un sujet sous Github
+L'ensemble du module est décliné sous Moodle qui référence ce site web.
+Ce travail sera partagé avec d'autres équipes de notre université.
+Utiliser nos propres outils pour nos enseignements.
+
 ## Vision globale du projet
 Votre objectif est de modéliser un système permettant de construire des questionnaires dans un contexte médical.  Certaines questions sont classiques avec par exemple l’attente d’une réponse textuelle. Pour d’autres questions, les réponses pourront correspondre à mémoriser des relevés de composants électroniques : le nombre de pas enregistré toutes les 2 heures, le max de tension prise dans la journée, …  Voici la spécification qui vous est donnée.
 
