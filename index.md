@@ -11,7 +11,6 @@ Overall smart healthcare market value by 2020 is estimated to be $169.32 billion
 ### Le projet CHAMPLAIN
 
 Projet basé sur les travaux du projet CHAMPLAIN entre l’Université Nice - Sophia Antipolis (UNS) et l’Université du Québec à Montréal (UQAM), en visant plus particulièrement le développement d’applications logicielles en support à la population vieillissante.
-Ce sujet est inspiré d'un TD préparé par AM. Pinna-Dery (Polytech) et S. Mosser (UQAM)
 
 [Extraits de la Description du Projet Champlain](ChamplainIntroduction.txt)
 
@@ -60,7 +59,33 @@ patient :
   - proposer une application à destination du patient sur laquelle le patient peut répondre à des questions.
 
 
+## Propriétés attendues du logiciel
 
+## E-1 : Adaptabilité dynamique 
+
+Quelle que soit la variante du logiciel on attend que vous proposiez une adaptation dynamique du logiciel en fonction du handicap 
+       ex. choix de la fonte, 
+       ex. remplacement d'une image par le texte,
+       ex. modification de la complexité des questions en retirant des réponses fausses, ...
+
+## E-2 : Handicap comme une exigence de premier ordre
+
+Quelle que soit la variante du logiciel on attend que vous preniez en compte le handicap à tous les niveaux par exemple
+* métier
+    * *globalement*,  
+        * par exemple "ne pas proposer d'images à un déficient visuel"  peut impacter  
+               * la construction des quizz par des aidants, 
+               * le choix des quizz, ...
+    *  *question*: 
+        *  par exemple si handicap cognitif introduire les notions de complexité d'une question, handicap visuel, de visibilité, ...
+    *  *Quiz* 
+        * par exemple le handicap va impacter la manière de poser les questions d'un quizz (grille ou non), répéter les questions;
+* interface par une adaptation des interactions Homme-Machine en fonction du handicap
+* architecture : 
+    * en cas de handicap lié à la mémoire les temps de réponses ont beaucoup d'importance, il convient donc de prévoir des palliatifs à un réseau faible par des téléchargements par exemple sur le téléphone.
+    * le stockage des clicks quoique indispensable pour favoriser une amélioration des interfaces pose des question de vie privé, de charge, ... 
+    
+    
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
