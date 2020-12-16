@@ -10,10 +10,12 @@ Overall smart healthcare market value by 2020 is estimated to be $169.32 billion
 
 ### Le projet CHAMPLAIN
 
+Projet basé sur les travaux du projet CHAMPLAIN entre l’Université Nice - Sophia Antipolis (UNS) et l’Université du Québec à Montréal (UQAM), en visant plus particulièrement le développement d’applications logicielles en support à la population vieillissante.
+Ce sujet est inspiré d'un TD préparé par AM. Pinna-Dery (Polytech) et S. Mosser (UQAM)
 
-You can use the [editor on GitHub](https://github.com/IUT-DEPT-INFO-UCA/LP-DAM-IOTIA-Project/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[Extraits de la Description du Projet Champlain](ChamplainIntroduction.txt)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Ce TD reprend la forme du TD sur [The Landing Gear System Case Study](https://mi-git.univ-tlse2.fr/ECb/LGS/blob/master/README.adoc)
 
 ### L'équipe enseignante
 - Mireille Blay-Fornarino, professeur en GL, 
