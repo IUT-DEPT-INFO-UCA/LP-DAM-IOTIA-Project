@@ -1,16 +1,17 @@
 # Projet 2020-21 : Des questionnaires pour le suivi des patients.
 
 
-## 1. Contexte du projet
+## I. Contexte du projet
 
-### 1.1. Accompagner la transformation numérique
+### I.1. Accompagner la transformation numérique
 ```markdown
 The digital transformation of healthcare among others is driven by the aging/growing population challenge, the rise of chronic diseases, increasing costs and the changed expectations and behavior of people whereby digital health plays an increasingly important role.
 Overall smart healthcare market value by 2020 is estimated to be $169.32 billion by 2020. A major part of it will be for remote patient monitoring.
-[Digital transformation: online guide to digital business transformation](https://www.i-scoop.eu/digital-transformation/)
 ```
+[Digital transformation: online guide to digital business transformation](https://www.i-scoop.eu/digital-transformation/)
 
-### 1.2. Le projet CHAMPLAIN
+
+### I.2. Le projet CHAMPLAIN
 
 Projet basé sur les travaux du projet CHAMPLAIN entre l’Université Nice - Sophia Antipolis (UNS) et l’Université du Québec à Montréal (UQAM), en visant plus particulièrement le développement d’applications logicielles en support à la population vieillissante.
 
@@ -18,7 +19,7 @@ Projet basé sur les travaux du projet CHAMPLAIN entre l’Université Nice - So
 
 Ce TD reprend la forme du TD sur [The Landing Gear System Case Study](https://mi-git.univ-tlse2.fr/ECb/LGS/blob/master/README.adoc)
 
-### L'équipe enseignante
+### I.3. L'équipe enseignante
 - Mireille Blay-Fornarino, professeur en GL, 
 - Jean-Michel Bruel, professeur en GL sur Toulouse qui prendra le maximum la main sur les enseignements de GL en LP DAM et IOTIA/
 
@@ -26,26 +27,60 @@ Ce TD reprend la forme du TD sur [The Landing Gear System Case Study](https://mi
 
 - Nicolas Ferry a initié cette version du projet... Il a fait cours aux DAM au 1e semestre et leur a donné des bases d’architectures, d’IC et de gestions de tâches sous Github.
 
-### Pourquoi un sujet sous Github
+### I.4. Pourquoi un sujet sous Github
 L'ensemble du module est décliné sous Moodle qui référence ce site web.
-Ce travail sera partagé avec d'autres équipes de notre université.
-Utiliser nos propres outils pour nos enseignements.
 
-## Vision globale du projet
-Votre objectif est de modéliser un système permettant de construire des questionnaires dans un contexte médical.  Certaines questions sont classiques avec par exemple l’attente d’une réponse textuelle. Pour d’autres questions, les réponses pourront correspondre à mémoriser des relevés de composants électroniques : le nombre de pas enregistré toutes les 2 heures, le max de tension prise dans la journée, …  Voici la spécification qui vous est donnée.
+Cependant, ce projet, principalement dans son énoncé, sera partagé avec d'autres équipes ddu projet Champlain. Il est donc nécessaire qu'il soit accessible à tous.
 
-Vous devez développer une application composée de plusieurs parties dont une partie permet aux soignants de créer des questionnaires adaptés aux patients et d’analyser leur réponse ; une autre partie permet au patient de définir son profil et de répondre à un questionnaire ; une partie centrale enregistre toutes les informations. Nous disposons d’une base de connaissance externe dans laquelle un grand nombre de types de supports mobiles ont été enregistrés (DeviceKB). Elle comprend des modèles de montres connectés, des tensiomètres, des appareils de détection de la glycémie connecté.
+Cet enseignement qui inclut Génie Logiciel et Gestion de projet en INFORMATIQUE, utilise ainsi ses propres outils. 
 
-## Description détaillée
-Un patient s’enregistre dans l’application centrale en précisant son nom et sa pathologie. Il peut pour cela être aidé par un membre de l’équipe médical si besoin. Il peut modifier son profil, et éventuellement enregistrer un nouveau dispositif mobile associé à son profil ; il doit alors faire référence à un type de support préenregistré dans DeviceKB. Il peut également préciser le personnel médical autorisé à accéder à son profil.
+## II. Spécifications
+Votre objectif est de modéliser un système permettant de construire des questionnaires dans un contexte médical.  Certaines questions sont classiques avec par exemple l’attente d’une réponse textuelle. Pour d’autres questions, les réponses pourront correspondre à mémoriser des relevés de dispositifs électroniques : le nombre de pas enregistré toutes les 2 heures, le max de tension prise dans la journée, …  Voici la spécification qui vous est donnée.
 
-Un coach médical peut créer un questionnaire médical pour un patient donné. En fonction de la pathologie du patient et des dispositifs associés à son profil, un questionnaire adapté est automatiquement généré. Le coach peut alors adapter la durée du questionnaire : à partir de quand le questionnaire doit être actif et pour quelle durée. Il élimine, ajoute ou modifie des questions. A partir du moment où il a validé un questionnaire celui-ci est automatiquement déployé sur le téléphone du patient.
+Vous devez développer une application composée de plusieurs parties dont une partie permet aux soignants de créer des questionnaires adaptés aux patients et d’analyser leurs réponses, par jour ou par questions ; une autre partie permet au patient de définir son profil et de répondre à un questionnaire ; une partie centrale enregistre toutes les informations. 
 
-Dès que le questionnaire est actif, l’application du patient, en fonction du questionnaire, se charge de faire les relevés automatiquement, de lancer des rappels au patient pour répondre à des questions textuelles ou lui demander de faire des relevés comme par exemple prendre son taux de glycémie. A la fin de la durée du questionnaire, celui-ci devient inactif. Le coach peut réactiver le questionnaire.
+### II.1. Description détaillée
 
-A FINIR
+La description ci-dessous fait l'hypothèse d'un choix d'architecture. Vous pouvez décider d'en changer, pour autant que les fonctionnalités du point de vue des acteurs soient respectées.
 
-## Attentes sur le projet
+#### II.1.1 Point de vue Patient
+
+Un patient s’enregistre dans l’application centrale en précisant son nom et sa pathologie. Il peut pour cela être aidé par un membre de l’équipe médical si besoin. 
+Il peut modifier son profil, et éventuellement enregistrer un nouveau dispositif mobile associé à son profil ; il doit alors faire référence à un type de support connu de votre application.
+
+Il peut également préciser le personnel médical autorisé à accéder à son profil.
+
+#### II.1.2 Point de vue Soignant
+
+Un coach médical (soignant) peut créer un questionnaire médical pour un patient donné. 
+En fonction de la pathologie du patient et des dispositifs associés à son profil, un questionnaire adapté est automatiquement généré. Le coach peut alors adapter la durée du questionnaire : à partir de quand le questionnaire doit être actif et pour quelle durée. Il élimine, ajoute ou modifie des questions. A partir du moment où il a validé un questionnaire celui-ci est automatiquement actif sur le téléphone du patient.
+
+#### II.1.3 Point de vue Application sur le téléphone
+L’application demande toutes les heures au questionnaire de faire ses relevés. Celui-ci fait les relevés automatiquement en se connectant aux dispositifs, et lance éventuellement des rappels au patient pour répondre à des questions textuelles ou lui demander de faire des relevés comme par exemple prendre son taux de glycémie. 
+
+Le questionnaire enregistre les réponses obtenues dans un « Recueil de données ». 
+
+Si le recueil est dans l’état connecté, les réponses sont envoyées aussitôt à l’application centrale. Si le recueil est dans l’état déconnecté, les réponses collectées sont enregistrées sur le téléphone. Lorsque la quantité des réponses collectées est supérieure à un seuil donné, le recueil passe dans un état dégradé. Dans ce cas, différentes stratégies de gestion des données sont possibles. 
+Dès que le recueil retourne dans l’état connecté, toutes les réponses mémorisées sont envoyées à l’application centrale.
+Dans l’état dégradé, parmi les stratégies possibles, l’une consiste à effacer les réponses les plus anciennes chaque fois que de nouvelles réponses sont collectées. Une autre stratégie consiste à effacer les données moins prioritaires. Le choix des stratégies dépend du soignant lors de la création du sondage.
+
+### II.2. Brefs exemples de scénario
+
+1.	 Richard, patient souffrant de diabète s’enregistre dans l’application centrale avec son téléphone.
+2.	 Richard enregistre son appareil de détection de la glycémie GlucofixTechLecteur002  et sa montre connectée SamPomp Galaxy Watch, SGW0012345
+3.	 Richard autorise Yassine, coach médical (soignant), à accéder à son profil.
+4.	 Yassine demande au système de créer un questionnaire. Le système lui demande pour quel patient, en lui présentant la liste de ses patients. Il sélectionne le patient - Richard. Le système génère un questionnaire qui comprend un ensemble de questions et de relevés et renvoie le questionnaire à Yassine pour qu’il l’adapte.
+5.	Yassine précise que le questionnaire doit être actif à partir de demain pour une durée d’un an.
+6.	Yassine garde les questions suivantes et en les spécialisant pour le patient, en particulier sur la fréquence :  
+    1. Question : Comment s’est passée votre journée ? répondre après 19h, une fois par jour
+    1. Question : Qu’avez-vous mangé aujourd’hui ? répondre matin, midi, soir
+    1. Relevé : sur la montre SGW0012345; nombre de pas ; toutes les 2 heures
+    1. Relevé : sur GlucofixTechLecteur002 ; glycémie ; matin, midi, soir
+7.	 Yassine valide le questionnaire, qui est alors automatiquement chargé sur le téléphone de Richard.
+8.	 Le lendemain matin, le téléphone notifie Richard qu’il doit prendre sa glycémie et répondre à la question b. Il relève le nombre de pas enregistré à 10h et place la donnée dans le recueil sur le téléphone.
+9.	 Le recueil est dans l’état connecté ; il envoie directement la réponse à l’application centrale.
+
+## III. Attentes sur le projet
 
 ### Fonctionnalités
 Vous devez au minimum : 
