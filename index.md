@@ -4,10 +4,8 @@
 ## I. Contexte du projet
 
 ### I.1. Accompagner la transformation numérique
-```markdown
-The digital transformation of healthcare among others is driven by the aging/growing population challenge, the rise of chronic diseases, increasing costs and the changed expectations and behavior of people whereby digital health plays an increasingly important role.
-Overall smart healthcare market value by 2020 is estimated to be $169.32 billion by 2020. A major part of it will be for remote patient monitoring.
-```
+> The digital transformation of healthcare among others is driven by the aging/growing population challenge, the rise of chronic diseases, increasing costs and the changed expectations and behavior of people whereby digital health plays an increasingly important role.
+> Overall smart healthcare market value by 2020 is estimated to be $169.32 billion by 2020. A major part of it will be for remote patient monitoring.
 [Digital transformation: online guide to digital business transformation](https://www.i-scoop.eu/digital-transformation/)
 
 
@@ -39,7 +37,7 @@ Votre objectif est de modéliser un système permettant de construire des questi
 
 Vous devez développer une application composée de plusieurs parties dont une partie permet aux soignants de créer des questionnaires adaptés aux patients et d’analyser leurs réponses, par jour ou par questions ; une autre partie permet au patient de définir son profil et de répondre à un questionnaire ; une partie centrale enregistre toutes les informations. 
 
-### II.1. Description détaillée
+### II.1. Description fonctionnelle
 
 La description ci-dessous fait l'hypothèse d'un choix d'architecture. Vous pouvez décider d'en changer, pour autant que les fonctionnalités du point de vue des acteurs soient respectées.
 
@@ -80,20 +78,36 @@ Dans l’état dégradé, parmi les stratégies possibles, l’une consiste à e
 8.	 Le lendemain matin, le téléphone notifie Richard qu’il doit prendre sa glycémie et répondre à la question b. Il relève le nombre de pas enregistré à 10h et place la donnée dans le recueil sur le téléphone.
 9.	 Le recueil est dans l’état connecté ; il envoie directement la réponse à l’application centrale.
 
+### II.3. Exigences non fonctionnelles
+
+1. Prenez en compte les aspects protection des données.
+Même si les mécanismes ne sont pas mis en place effectivement, explicitez ce que vous feriez.
+
+2. Quelle que soit la variante du logiciel on attend que vous preniez en compte au moins un aspect lié au handicap, par exemple
+    * Handicap cognitif : 
+        *  Ne demandez pas à une personne atteinte de handicap cognitif, ne lui demandez pas plusieurs fois si elle a pris ses médicaments;
+        * Tant qu'un relevé n'est pas fait, redemandez le; mais si la personne n'a pas de handicap, autorisez là à refuser le relevé.
+    * Handicap visuel : 
+       * Assurez-vous qu'une question n'est pas trop longue pour être visualisée en grand sur l'écran du téléphone ou au contraire dans une zone limitée du téléphone
+    * Handicap physique : 
+        * Les boutons doivent être suffisamment gros et espacés pour qu'une personne ayant du mal à contrôler ses mouvements puissent cliquer au bon endroit.
+    * prévoir une interface pour une adaptation des interactions Homme-Machine en fonction du handicap
+    
+3. Gérer le mode déconnecté avec au moins deux politiques différentes.
+    
 ## III. Attentes sur le projet
 
-### Fonctionnalités
+### III.1. Fonctionnalités
 Vous devez au minimum : 
   - côté coach sportif : 
      * permettre de créer un questionnaire adapté à un patient avec une question textuelle au moins et deux profils différents possibles
    - côté patient : 
-     * permettre de répondre aux questions du questionnaire et renregistrement automatique dans le server
+     * permettre de répondre aux questions du questionnaire et enregistrement automatique dans le server
    - partie centrale : 
      * a minima enregistrement des réponses.
      
  ### Exigences non fonctionnelles
-patient : 
-  - proposer une application à destination du patient sur laquelle le patient peut répondre à des questions.
+Vous choisissez 
 
 
 ## Propriétés attendues du logiciel
