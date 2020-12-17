@@ -1,4 +1,4 @@
-# Projet 2020-21 : Des questionnaires pour le suivi des patients.
+# Projet 2020-21 : Des questionnaires pour le suivi des patients
 
 
 ## I. Contexte du projet
@@ -80,10 +80,10 @@ Dans l’état dégradé, parmi les stratégies possibles, l’une consiste à e
 
 ### II.3. Exigences non fonctionnelles
 
-1. Prenez en compte les aspects protection des données.
-Même si les mécanismes ne sont pas mis en place effectivement, explicitez ce que vous feriez.
+#### II.3.1 Protection des données.
+voir cours.
 
-2. Quelle que soit la variante du logiciel on attend que vous preniez en compte au moins un aspect lié au handicap, par exemple
+#### II.3.2 Prise en compte du handicap, une exigence de première classe.
     * Handicap cognitif : 
         *  Ne demandez pas à une personne atteinte de handicap cognitif, ne lui demandez pas plusieurs fois si elle a pris ses médicaments;
         * Tant qu'un relevé n'est pas fait, redemandez le; mais si la personne n'a pas de handicap, autorisez là à refuser le relevé.
@@ -93,24 +93,38 @@ Même si les mécanismes ne sont pas mis en place effectivement, explicitez ce q
         * Les boutons doivent être suffisamment gros et espacés pour qu'une personne ayant du mal à contrôler ses mouvements puissent cliquer au bon endroit.
     * prévoir une interface pour une adaptation des interactions Homme-Machine en fonction du handicap
     
-3. Gérer le mode déconnecté avec au moins deux politiques différentes.
+La notion de profil donnée initialement doit bien évidemment intégrer la notion de profil.
+
+#### II.3.2  Gérer le mode déconnecté
+* Les questionnaires doivent être accessibles en mode déconnectés.
+Il peut exister plusieurs politiques de gestion de la récupération des données.
     
 ## III. Attentes sur le projet
+
+Vous devrez préciser au début de votre projet fin de la 2e semaine, quels sont vos objectifs.
 
 ### III.1. Fonctionnalités
 Vous devez au minimum : 
   - côté coach sportif : 
-     * permettre de créer un questionnaire adapté à un patient avec une question textuelle au moins et deux profils différents possibles
+     * permettre de créer un questionnaire adapté à un patient avec une question textuelle au moins.
    - côté patient : 
      * permettre de répondre aux questions du questionnaire et enregistrement automatique dans le server
    - partie centrale : 
      * a minima enregistrement des réponses.
-     
+
  ### Exigences non fonctionnelles
-Vous choisissez 
+
+Vous devez prendre en compte chacun des points suivants.
+
+1. Protection des données.
+Même si les mécanismes ne sont pas mis en place effectivement, explicitez ce que vous feriez.
+
+2. Vous prendrez en compte au moins un aspect lié au handicap.
+
+3. Gérer le mode déconnecté avec au moins deux politiques différentes, par exemple stockage sur le téléphone ou envoi des données.
 
 
-## Propriétés attendues du logiciel
+## PAS FINI-------- A REPRENDRE ---- Propriétés attendues du logiciel
 
 ## E-1 : Adaptabilité dynamique 
 
