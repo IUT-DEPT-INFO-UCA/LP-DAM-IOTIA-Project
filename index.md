@@ -130,6 +130,15 @@ Vous prendrez en compte au moins un aspect lié au handicap.
 #### 3. Mode déconnecté
 Gérer le mode déconnecté avec au moins deux politiques différentes, par exemple stockage sur le téléphone ou envoi des données.
 
+# Autres Références
+
+* https://www.w3.org/2019/12/pressrelease-intro-web-accessibility-course.html.fr
+* https://camo.githubusercontent.com/c59ffa40ba8d00a552f74fb05742f6b950bf4a64/68747470733a2f2f692e696d6775722e636f6d2f463170373568422e706e67
+* https://dev.to/madalynrose/5-things-you-need-to-know-about-manual-accessibility-testing-with-the-keyboard-and-screen-readers-3512
+
+
+
+
 # --------------- PAS FINI --------------II.4 Grandes étapes du projet
 
 1. Sprint 0 : Analyse du projet : *du 16/12/19 au 20/1/20*
