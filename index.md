@@ -11,9 +11,9 @@
 
 ### I.2. Le projet CHAMPLAIN
 
-Projet basé sur les travaux du projet CHAMPLAIN entre l’Université Nice - Sophia Antipolis (UNS) et l’Université du Québec à Montréal (UQAM), en visant plus particulièrement le développement d’applications logicielles en support à la population vieillissante.
+Projet basé sur les travaux du [projet CHAMPLAIN](https://ace-design.github.io/champlain/) entre l’Université Nice - Côte d'Azur (UCA) et l’Université du Québec à Montréal (UQAM), en visant plus particulièrement le développement d’applications logicielles en support à la population vieillissante.
 
-[Extraits de la Description du Projet Champlain](ChamplainIntroduction.txt)
+[Extraits de la Description du Projet Champlain]()
 
 Ce TD reprend la forme du TD sur [The Landing Gear System Case Study](https://mi-git.univ-tlse2.fr/ECb/LGS/blob/master/README.adoc)
 
