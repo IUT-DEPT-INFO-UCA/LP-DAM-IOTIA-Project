@@ -13,22 +13,23 @@
 
 Projet basé sur les travaux du [projet CHAMPLAIN](https://ace-design.github.io/champlain/) entre l’Université Nice - Côte d'Azur (UCA) et l’Université du Québec à Montréal (UQAM), en visant plus particulièrement le développement d’applications logicielles en support à la population vieillissante.
 
-[Extraits de la Description du Projet Champlain]()
-
 Ce TD reprend la forme du TD sur [The Landing Gear System Case Study](https://mi-git.univ-tlse2.fr/ECb/LGS/blob/master/README.adoc)
 
 ### I.3. L'équipe enseignante
-- Mireille Blay-Fornarino, professeur en GL, 
-- Jean-Michel Bruel, professeur en GL sur Toulouse qui prendra le maximum la main sur les enseignements de GL en LP DAM et IOTIA/
+- Mireille Blay-Fornarino, professeur en GL;
 
-- Pierrick est chef de projet chez Air France. Il leur partagera son expérience et son vécu. Faîtes appel à lui si vous pensez que les étudiants ont besoin de coaching par exemple.
+- Jean-Michel Bruel, professeur en GL sur Toulouse qui prendra le maximum la main sur les enseignements de GL en LP DAM et IOTIA;
+
+- Pierrick est chef de projet chez Air France. Il leur partagera son expérience et son vécu. Faîtes appel à lui si vous pensez que les étudiants ont besoin de coaching par exemple;
+
+- Julien Crémoni est ingénieur Consultant chez Altran;
 
 - Nicolas Ferry a initié cette version du projet... Il a fait cours aux DAM au 1e semestre et leur a donné des bases d’architectures, d’IC et de gestions de tâches sous Github.
 
 ### I.4. Pourquoi un sujet sous Github
-L'ensemble du module est décliné sous Moodle qui référence ce site web.
+L'ensemble du module est décliné sous [Moodle](https://lms.univ-cotedazur.fr/course/view.php?id=16573] qui référence ce site web.
 
-Cependant, ce projet, principalement dans son énoncé, sera partagé avec d'autres équipes ddu projet Champlain. Il est donc nécessaire qu'il soit accessible à tous.
+Cependant, ce projet, principalement dans son énoncé, sera partagé avec d'autres équipes du projet Champlain. Il est donc nécessaire qu'il soit accessible à tous.
 
 Cet enseignement qui inclut Génie Logiciel et Gestion de projet en INFORMATIQUE, utilise ainsi ses propres outils. 
 
@@ -54,7 +55,7 @@ Un coach médical (soignant) peut créer un questionnaire médical pour un patie
 En fonction de la pathologie du patient et des dispositifs associés à son profil, un questionnaire adapté est automatiquement généré. Le coach peut alors adapter la durée du questionnaire : à partir de quand le questionnaire doit être actif et pour quelle durée. Il élimine, ajoute ou modifie des questions. A partir du moment où il a validé un questionnaire celui-ci est automatiquement actif sur le téléphone du patient.
 
 #### II.1.3 Point de vue Application sur le téléphone
-L’application demande toutes les heures au questionnaire de faire ses relevés. Celui-ci fait les relevés automatiquement en se connectant aux dispositifs, et lance éventuellement des rappels au patient pour répondre à des questions textuelles ou lui demander de faire des relevés comme par exemple prendre son taux de glycémie. 
+L’application demande toutes les heures au questionnaire de faire ses relevés. Celui-ci fait, si c'est nécessaire, les relevés automatiquement en se connectant aux dispositifs, et lance éventuellement des rappels au patient pour répondre à des questions textuelles ou lui demander de faire des relevés comme par exemple prendre son taux de glycémie. 
 
 Le questionnaire enregistre les réponses obtenues dans un « Recueil de données ». 
 
@@ -80,79 +81,56 @@ Dans l’état dégradé, parmi les stratégies possibles, l’une consiste à e
 
 ### II.3. Exigences non fonctionnelles
 
-#### II.3.1 Protection des données.
-voir cours.
+#### II.3.1 Protection des données
+Les données du patient qu'il s'agissse des informations qui le concernent ou des données relevées sont privées.
 
 #### II.3.2 Prise en compte du handicap, une exigence de première classe.
     * Handicap cognitif : 
-        *  Ne demandez pas à une personne atteinte de handicap cognitif, ne lui demandez pas plusieurs fois si elle a pris ses médicaments;
+        * Ne demandez pas à une personne atteinte de handicap cognitif plusieurs fois si elle a pris ses médicaments si vous n'avez pas les moyens de vérifier qu'elle ne les a pas déjà pris.
         * Tant qu'un relevé n'est pas fait, redemandez le; mais si la personne n'a pas de handicap, autorisez là à refuser le relevé.
     * Handicap visuel : 
-       * Assurez-vous qu'une question n'est pas trop longue pour être visualisée en grand sur l'écran du téléphone ou au contraire dans une zone limitée du téléphone
+       * Assurez-vous qu'une question n'est pas trop longue pour être visualisée en grand sur l'écran du téléphone ou au contraire dans une zone limitée du téléphone par exemple en cas de réduction du champs de vision
     * Handicap physique : 
         * Les boutons doivent être suffisamment gros et espacés pour qu'une personne ayant du mal à contrôler ses mouvements puissent cliquer au bon endroit.
-    * prévoir une interface pour une adaptation des interactions Homme-Machine en fonction du handicap
+        
+Vous pouvez en fonction de votre propre expérience choisir d'autres exigences liées au handicap.
     
-La notion de profil donnée initialement doit bien évidemment intégrer la notion de profil.
+La notion de profil donnée initialement doit bien évidemment intégrer la notion de handicap.
 
 #### II.3.2  Gérer le mode déconnecté
-* Les questionnaires doivent être accessibles en mode déconnectés.
+ * Les questionnaires doivent être accessibles en mode déconnecté.
 Il peut exister plusieurs politiques de gestion de la récupération des données.
     
 ## III. Attentes sur le projet
 
-Vous devrez préciser au début de votre projet fin de la 2e semaine, quels sont vos objectifs.
+Vous devrez préciser au début de votre projet avant la fin de la 2e semaine, quels sont vos objectifs.
 
 ### III.1. Fonctionnalités
 Vous devez au minimum : 
   - côté coach sportif : 
      * permettre de créer un questionnaire adapté à un patient avec une question textuelle au moins.
    - côté patient : 
-     * permettre de répondre aux questions du questionnaire et enregistrement automatique dans le server
+     * permettre de répondre aux questions du questionnaire et enregistrement automatique dans le serveur
    - partie centrale : 
-     * a minima enregistrement des réponses.
+     * a minima enregistrer des réponses.
 
- ### Exigences non fonctionnelles
+Notez bien que la gestion du mot de passe ne fait pas partie du Produit Minimal Viable.
+
+### III.2. Exigences non fonctionnelles
 
 Vous devez prendre en compte chacun des points suivants.
 
-1. Protection des données.
-Même si les mécanismes ne sont pas mis en place effectivement, explicitez ce que vous feriez.
+#### 1. Protection des données.
+Même si les mécanismes ne sont pas mis en place effectivement, explicitez ce que vous feriez, pour protéger les données.
+L'utilisation d'un mot de passe n'est pas suffisante. 
 
-2. Vous prendrez en compte au moins un aspect lié au handicap.
+#### 2. Handicap
+Vous prendrez en compte au moins un aspect lié au handicap.
 
-3. Gérer le mode déconnecté avec au moins deux politiques différentes, par exemple stockage sur le téléphone ou envoi des données.
+#### 3. Mode déconnecté
+Gérer le mode déconnecté avec au moins deux politiques différentes, par exemple stockage sur le téléphone ou envoi des données.
 
-
-## PAS FINI-------- A REPRENDRE ---- Propriétés attendues du logiciel
-
-## E-1 : Adaptabilité dynamique 
-
-Quelle que soit la variante du logiciel on attend que vous proposiez une adaptation dynamique du logiciel en fonction du handicap 
-       ex. choix de la fonte, 
-       ex. remplacement d'une image par le texte,
-       ex. modification de la complexité des questions en retirant des réponses fausses, ...
-
-## E-2 : Handicap comme une exigence de premier ordre
-
-Quelle que soit la variante du logiciel on attend que vous preniez en compte le handicap à tous les niveaux par exemple
-* métier
-    * *globalement*,  
-        * par exemple "ne pas proposer d'images à un déficient visuel"  peut impacter  
-               * la construction des quizz par des aidants, 
-               * le choix des quizz, ...
-    *  *question*: 
-        *  par exemple si handicap cognitif introduire les notions de complexité d'une question, handicap visuel, de visibilité, ...
-    *  *Quiz* 
-        * par exemple le handicap va impacter la manière de poser les questions d'un quizz (grille ou non), répéter les questions;
-* interface par une adaptation des interactions Homme-Machine en fonction du handicap
-* architecture : 
-    * en cas de handicap lié à la mémoire les temps de réponses ont beaucoup d'importance, il convient donc de prévoir des palliatifs à un réseau faible par des téléchargements par exemple sur le téléphone.
-    * le stockage des clicks quoique indispensable pour favoriser une amélioration des interfaces pose des question de vie privé, de charge, ... 
-    
-    
-
-# II.4 Grandes étapes du projet
+# --------------- PAS FINI --------------II.4 Grandes étapes du projet
 
 1. Sprint 0 : Analyse du projet : *du 16/12/19 au 20/1/20*
     - [ TD Modélisation UML](TD/modelisation.md)
