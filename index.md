@@ -18,7 +18,7 @@ Ce TD reprend la forme du TD sur [The Landing Gear System Case Study](https://mi
 ### I.3. L'équipe enseignante
 - Mireille Blay-Fornarino, professeur en GL;
 
-- Jean-Michel Bruel, professeur en GL sur Toulouse qui prendra le maximum la main sur les enseignements de GL en LP DAM et IOTIA;
+- [Jean-Michel Bruel](https://jmbruel.netlify.app), professeur en GL sur Toulouse qui prendra le maximum la main sur les enseignements de GL en LP DAM et IOTIA;
 
 - Pierrick est chef de projet chez Air France. Il leur partagera son expérience et son vécu. Faîtes appel à lui si vous pensez que les étudiants ont besoin de coaching par exemple;
 
@@ -27,7 +27,7 @@ Ce TD reprend la forme du TD sur [The Landing Gear System Case Study](https://mi
 - Nicolas Ferry a initié cette version du projet... Il a fait cours aux DAM au 1e semestre et leur a donné des bases d’architectures, d’IC et de gestions de tâches sous Github.
 
 ### I.4. Pourquoi un sujet sous Github
-L'ensemble du module est décliné sous [Moodle](https://lms.univ-cotedazur.fr/course/view.php?id=16573] qui référence ce site web.
+L'ensemble du module est décliné sous [Moodle](https://lms.univ-cotedazur.fr/course/view.php?id=16573) qui référence ce site web.
 
 Cependant, ce projet, principalement dans son énoncé, sera partagé avec d'autres équipes du projet Champlain. Il est donc nécessaire qu'il soit accessible à tous.
 
